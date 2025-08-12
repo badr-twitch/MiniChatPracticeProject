@@ -48,10 +48,10 @@ register_Form.addEventListener('submit', (e) => {
     }
 
     // Password match validity
-    const pwd = register_Form.elements['register.password'].value;
+    const pwd = register_Form.elements['register-password'].value;
     const conf = register_Form.elements['confirm-password'].value;
     if(pwd !== conf) {
-        ['register.password', 'confirm-password'].forEach((name) => {
+        ['register-password', 'confirm-password'].forEach((name) => {
             const field = register_Form.elements[name];
             field.style.border = '2px solid red';
             shake(field);
